@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TTB_KING Location - Services au Bénin</title>
+    <link rel="stylesheet" href="style.css">
+<!--     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> -->
+     <link rel="stylesheet" href="javascript.js">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>TTB_KING <span>Location</span></h1>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#vehicules">Véhicules</a></li>
+                <li><a href="#pourquoi">Pourquoi nous</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#reservation" class="btn-reservation">Réserver</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <h2>Bienvenue chez TTB_KING Location ! 🇧🇯 </h2>
+            <p>Nous sommes une entreprise béninoise spécialisée dans la fourniture de services de qualité pour répondre à vos besoins divers.</p>
+            <div class="hero-buttons">
+                <a href="#services" class="btn-primary">Découvrir nos services</a>
+                <a href="#contact" class="btn-secondary">Nous contacter</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="mission">
+        <div class="container">
+            <div class="mission-content">
+                <h2>Notre mission</h2>
+                <p>Vous offrir des véhicules fiables et sécurisés, adaptés à vos besoins, avec un service client exceptionnel. Nous mettons notre expertise à votre service pour tous vos projets de location, événements, immobilier et déménagement.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Nos Services</h2>
+            <div class="services-grid" id="servicesGrid">
+                <!-- Services will be loaded here via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Véhicules Section -->
+    <section id="vehicules" class="vehicules">
+        <div class="container">
+            <h2 class="section-title">Nos Véhicules</h2>
+            <div class="vehicules-grid" id="vehiculesGrid">
+                <!-- Vehicles will be loaded here via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="pourquoi" class="why-us">
+        <div class="container">
+            <h2 class="section-title">Pourquoi choisir TTB_KING ?</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <i class="fas fa-car"></i>
+                    <h3>Véhicules neufs</h3>
+                    <p>Véhicules neufs et bien entretenus pour votre sécurité et confort</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-tags"></i>
+                    <h3>Tarifs compétitifs</h3>
+                    <p>Tarifs compétitifs et forfaits flexibles adaptés à vos besoins</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-headset"></i>
+                    <h3>Service client 24/7</h3>
+                    <p>Service client disponible 24h/24 et 7j/7 pour vous assister</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-truck"></i>
+                    <h3>Livraison à domicile</h3>
+                    <p>Livraison et reprise de véhicules à votre convenance</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-star"></i>
+                    <h3>Services personnalisés</h3>
+                    <p>Services de qualité et personnalisés selon vos exigences</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-users"></i>
+                    <h3>Équipe expérimentée</h3>
+                    <p>Équipe expérimentée et à votre écoute</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guest House Section -->
+    <section class="guest-house">
+        <div class="container">
+            <div class="guest-content">
+                <h2>Location de Guest House</h2>
+                <p>Nos guest houses sont conçues pour vous offrir un séjour confortable et agréable. Idéales pour vos vacances ou vos déplacements professionnels.</p>
+                <div class="guest-features">
+                    <div class="guest-feature">
+                        <i class="fas fa-wifi"></i>
+                        <span>WiFi haut débit</span>
+                    </div>
+                    <div class="guest-feature">
+                        <i class="fas fa-utensils"></i>
+                        <span>Cuisine équipée</span>
+                    </div>
+                    <div class="guest-feature">
+                        <i class="fas fa-air-conditioner"></i>
+                        <span>Climatisation</span>
+                    </div>
+                    <div class="guest-feature">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Sécurité 24/7</span>
+                    </div>
+                </div>
+                <a href="#contact" class="btn-primary">Réserver maintenant</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contactez-nous</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Téléphone</h3>
+                            <p id="phoneNumber">+229 01 23 45 67 89</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p id="emailAddress">contact@ttbking.bj</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Adresse</h3>
+                            <p>Cotonou, Bénin</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Horaires</h3>
+                            <p>Lun - Dim : 24h/24</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Envoyez-nous un message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Votre nom" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Votre email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" placeholder="Votre téléphone">
+                        </div>
+                        <div class="form-group">
+                            <select id="service" required>
+                                <option value="" disabled selected>Choisissez un service</option>
+                                <option value="location">Location de véhicules</option>
+                                <option value="evenementiel">Événementiel</option>
+                                <option value="immobilier">Immobilier</option>
+                                <option value="guesthouse">Guest House</option>
+                                <option value="nettoyage">Nettoyage et entretien</option>
+                                <option value="demenagement">Déménagement</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="4" placeholder="Votre message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Envoyer</button>
+                    </form>
+                    <div id="formMessage" class="form-message"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Modal -->
+    <div id="reservationModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Réserver votre service</h2>
+            <form id="reservationForm">
+                <div class="form-group">
+                    <input type="text" id="resName" placeholder="Votre nom complet" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="resEmail" placeholder="Votre email" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="resPhone" placeholder="Votre téléphone" required>
+                </div>
+                <div class="form-group">
+                    <select id="resService" required>
+                        <option value="" disabled selected>Service souhaité</option>
+                        <option value="location">Location de véhicules</option>
+                        <option value="evenementiel">Événementiel</option>
+                        <option value="immobilier">Immobilier</option>
+                        <option value="guesthouse">Guest House</option>
+                        <option value="nettoyage">Nettoyage et entretien</option>
+                        <option value="demenagement">Déménagement</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="date" id="resDate" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="resDetails" rows="3" placeholder="Détails supplémentaires"></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Confirmer la réservation</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TTB_KING Location</h3>
+                    <p>Votre partenaire de confiance pour tous vos besoins de location et services au Bénin.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Liens rapides</h4>
+                    <ul>
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#vehicules">Véhicules</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Nos services</h4>
+                    <ul>
+                        <li>Location de véhicules</li>
+                        <li>Événementiel</li>
+                        <li>Immobilier</li>
+                        <li>Guest House</li>
+                        <li>Nettoyage</li>
+                        <li>Déménagement</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Recevez nos offres spéciales</p>
+                    <form id="newsletterForm">
+                        <input type="email" placeholder="Votre email">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 TTB_KING Location - Tous droits réservés. 🇧🇯</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
