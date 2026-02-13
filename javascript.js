@@ -43,8 +43,8 @@ const servicesData = [
 // Données des véhicules
 const vehiculesData = [
     {
-        image: 'https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
-        title: 'Voiture Compacte',
+        image: 'lexus2.jpeg',
+        title: 'Lexus',
         description: 'Idéale pour la ville, économique et facile à garer',
         price: '25 000',
         period: 'jour',
@@ -52,8 +52,8 @@ const vehiculesData = [
         fuel: 'Essence'
     },
     {
-        image: 'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
-        title: '4x4 Toyota',
+        image: 'rangerover.jpeg',
+        title: 'Range rover',
         description: 'Parfait pour les routes difficiles et les aventures',
         price: '45 000',
         period: 'jour',
@@ -61,8 +61,8 @@ const vehiculesData = [
         fuel: 'Diesel'
     },
     {
-        image: 'https://images.unsplash.com/photo-1568605117036-5fe5e7fa0ce2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
-        title: 'Berline Luxe',
+        image: 'prado.jpeg',
+        title: 'Prado',
         description: 'Confort et élégance pour vos déplacements professionnels',
         price: '65 000',
         period: 'jour',
@@ -70,14 +70,34 @@ const vehiculesData = [
         fuel: 'Essence'
     },
     {
-        image: 'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
-        title: 'Utilitaire',
+        image: 'mercedes.jpeg',
+        title: 'Mercedesse',
         description: 'Pour vos déménagements et transports de marchandises',
         price: '35 000',
         period: 'jour',
         features: ['3 places', 'Grand volume', 'Diesel'],
         fuel: 'Diesel'
+    },
+    {
+        image: 'toyotacamry.jpeg',
+        title: 'Toyota Camry',
+        description: 'Parfait pour les routes difficiles et les aventures',
+        price: '45 000',
+        period: 'jour',
+        features: ['5 places', '4x4', 'Diesel'],
+        fuel: 'Diesel'
+    },
+     {
+        image: 'lexux.jpeg',
+        title: 'Lexuxe',
+        description: 'Parfait pour les routes difficiles et les aventures',
+        price: '45 000',
+        period: 'jour',
+        features: ['5 places', '4x4', 'Diesel'],
+        fuel: 'Diesel'
     }
+   
+   
 ];
 
 // Charger les services
