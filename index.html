@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TTB_KING Location - Services au Bénin</title>
     <link rel="stylesheet" href="style.css">
-<!--     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> -->
-     <link rel="stylesheet" href="javascript.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <!-- Header & Navigation -->
@@ -109,32 +108,59 @@
             </div>
         </div>
     </section>
-
-    <!-- Guest House Section -->
+        <!-- Guest House Section -->
     <section class="guest-house">
-        <div class="container">
-            <div class="guest-content">
-                <h2>Location de Guest House</h2>
-                <p>Nos guest houses sont conçues pour vous offrir un séjour confortable et agréable. Idéales pour vos vacances ou vos déplacements professionnels.</p>
-                <div class="guest-features">
-                    <div class="guest-feature">
-                        <i class="fas fa-wifi"></i>
-                        <span>WiFi haut débit</span>
-                    </div>
-                    <div class="guest-feature">
-                        <i class="fas fa-utensils"></i>
-                        <span>Cuisine équipée</span>
-                    </div>
-                    <div class="guest-feature">
-                        <i class="fas fa-air-conditioner"></i>
-                        <span>Climatisation</span>
-                    </div>
-                    <div class="guest-feature">
-                        <i class="fas fa-shield-alt"></i>
-                        <span>Sécurité 24/7</span>
+        
+                <div class="guest-content">
+                    
+                
+                    <h2>Location de Guest House</h2>
+                    <p>Nos guest houses sont conçues pour vous offrir un séjour confortable et agréable. Idéales pour vos vacances ou vos déplacements professionnels.</p>
+                    <div class="guest-features">
+                        <div class="guest-feature">
+                            <i class="fas fa-wifi"></i>
+                            <span>WiFi haut débit</span>
+                        </div>
+                        <div class="guest-feature">
+                            <i class="fas fa-utensils"></i>
+                            <span>Cuisine équipée</span>
+                        </div>
+                        <div class="guest-feature">
+                            <i class="fas fa-air-conditioner"></i>
+                            <span>Climatisation</span>
+                        </div>
+                        <div class="guest-feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Sécurité 24/7</span>
+                        </div>
                     </div>
                 </div>
-                <a href="#contact" class="btn-primary">Réserver maintenant</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nos Guest Houses Gallery Section -->
+    <section id="guest-houses" class="guest-houses-gallery">
+        <div class="container">
+            <h2 class="section-title">Nos Guest Houses</h2>
+            <p class="section-subtitle">Découvrez nos maisons disponibles pour votre séjour</p>
+            
+            <!-- Filter Buttons -->
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">Toutes</button>
+                <button class="filter-btn" data-filter="villa">Villas</button>
+                <button class="filter-btn" data-filter="appartement">Appartements</button>
+                <button class="filter-btn" data-filter="studio">Studios</button>
+            </div>
+
+            <!-- Guest Houses Grid -->
+            <div class="guest-houses-grid" id="guestHousesGrid">
+                <!-- Guest houses will be loaded here via JavaScript -->
+            </div>
+
+            <!-- View More Button -->
+            <div class="text-center">
+                <button id="viewMoreGuestHouses" class="btn-primary">Voir plus de Guest Houses</button>
             </div>
         </div>
     </section>
@@ -149,7 +175,7 @@
                         <i class="fas fa-phone"></i>
                         <div>
                             <h3>Téléphone</h3>
-                            <p id="phoneNumber">+229 01 23 45 67 89</p>
+                            <p id="phoneNumber">+229 01 66 23 28 88</p>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -271,12 +297,14 @@
                 <div class="footer-section">
                     <h4>Nos services</h4>
                     <ul>
-                        <li>Location de véhicules</li>
-                        <li>Événementiel</li>
-                        <li>Immobilier</li>
-                        <li>Guest House</li>
-                        <li>Nettoyage</li>
-                        <li>Déménagement</li>
+                        
+                            <li><i>Location de véhicules</i></li>
+                            <li><i>Événementiel</i></li>
+                            <li><i>Immobilier</i></li>
+                            <li><i>Guest House</i></li>
+                            <li>Nettoyage<i></i></li>
+                            <li><i>Déménagement</i></li>
+                        </i>
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -294,6 +322,51 @@
         </div>
     </footer>
 
-    <script src="javascript.js"></script>
+   
+        <!-- WhatsApp & Live Chat Floating Buttons -->
+    <div class="floating-buttons">
+        <!-- WhatsApp Button -->
+        <a href="https://wa.me/2290166232888?text=Bonjour%20TTB_KING%20Location%2C%20j'aimerais%20avoir%20des%20informations%20sur%20vos%20services." 
+           class="float-wa" 
+           target="_blank" 
+           aria-label="Chatter sur WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        
+        <!-- Live Chat Button -->
+        <button class="float-chat" id="liveChatButton" aria-label="Ouvrir le chat en direct">
+            <i class="fas fa-comment-dots"></i>
+        </button>
+    </div>
+
+    <!-- Live Chat Modal -->
+    <div id="liveChatModal" class="chat-modal">
+        <div class="chat-modal-content">
+            <div class="chat-header">
+                <h3><i class="fas fa-comment"></i> Chat en direct</h3>
+                <span class="close-chat">&times;</span>
+            </div>
+            <div class="chat-body" id="chatBody">
+                <div class="chat-message bot-message">
+                    <div class="message-content">
+                        <strong>TTB_KING Support</strong>
+                        <p>Bonjour ! Comment pouvons-nous vous aider aujourd'hui ?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-footer">
+                <form id="chatForm">
+                    <input type="text" id="chatInput" placeholder="Tapez votre message..." autocomplete="off">
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
+                <div class="chat-quick-replies">
+                    <button class="quick-reply" data-message="Je souhaite louer un véhicule">🚗 Location</button>
+                    <button class="quick-reply" data-message="Je suis intéressé par une guest house">🏠 Guest House</button>
+                    <button class="quick-reply" data-message="J'ai besoin d'un devis">📋 Devis</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
