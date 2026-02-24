@@ -294,7 +294,7 @@ document.addEventListener('DOMContentLoaded', function() {
             return 'Nous proposons des services de déménagement complets avec notre équipe professionnelle. Demandez un devis gratuit !';
         }
         else if (msg.includes('contact') || msg.includes('téléphone') || msg.includes('appeler')) {
-            return 'Vous pouvez nous joindre au +229 01 66 23 28 88 ou nous envoyer un email à contact@ttbking.bj';
+            return 'Vous pouvez nous joindre au +229 01 66 23 28 88 ou nous envoyer un email à augustin46@gmail.com';
         }
         else if (msg.includes('merci')) {
             return 'Merci à vous ! N\'hésitez pas si vous avez d\'autres questions.';
@@ -487,10 +487,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 'https://images.unsplash.com/photo-1513694203232-719a280e022f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
                 'https://images.unsplash.com/photo-1536376072261-38c75010e6c9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
             ]
-        }
+        },
         
-
-        id: 1,
+        {
+            id: 7,
             name: 'Villa Océane',
             location: 'Porto-Novo, PK15',
             price: '75000',
@@ -509,7 +509,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 'g4.jpg',
                 'g5.jpg'
             ]
-        },
+        }
     ];
 
     let currentFilter = 'all';
@@ -720,4 +720,5 @@ document.addEventListener('DOMContentLoaded', function() {
     };
 
 });
+
 
