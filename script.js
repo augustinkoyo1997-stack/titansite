@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function() {
             { img: 'lexux.jepeg', name: 'Lexus', price: '60000', fuel: 'Diesel', seats: '9' },
             { img: 'prado.jepeg', name: 'Prado', price: '60000', fuel: 'Diesel', seats: '9' },
             { img: 'pikup.jepeg', name: 'Pikup', price: '60000', fuel: 'Diesel', seats: '9' },
-            { img: 'rangerover.jepeg', name: 'Lexus', price: '60000', fuel: 'Diesel', seats: '9' },
+            { img: 'rangerover.jepeg', name: 'Lexus', price: '60000', fuel: 'Diesel', seats: '9' }
             
         ];
 
@@ -488,6 +488,28 @@ document.addEventListener('DOMContentLoaded', function() {
                 'https://images.unsplash.com/photo-1536376072261-38c75010e6c9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
             ]
         }
+        
+
+        id: 1,
+            name: 'Villa Océane',
+            location: 'Porto-Novo, PK15',
+            price: '75000',
+            type: 'villa',
+            rating: 4.8,
+            reviews: 24,
+            bedrooms: 4,
+            bathrooms: 3,
+            guests: 8,
+            image: 'g1.jpg',
+            amenities: ['wifi', 'climatisation', 'piscine', 'parking', 'cuisine'],
+            description: 'Magnifique villa avec vue sur l\'océan, piscine privée et jardin tropical.',
+            images: [
+                'g2.jpg',
+                'g3.jpg',
+                'g4.jpg',
+                'g5.jpg'
+            ]
+        },
     ];
 
     let currentFilter = 'all';
@@ -698,3 +720,4 @@ document.addEventListener('DOMContentLoaded', function() {
     };
 
 });
+
