@@ -76,6 +76,12 @@ document.addEventListener('DOMContentLoaded', function() {
             { img: 'https://images.unsplash.com/photo-1494976388531-d1058494cdd8?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80', name: 'Toyota Corolla', price: '25000', fuel: 'Essence', seats: '5' },
             { img: 'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80', name: 'Ford Ranger', price: '45000', fuel: 'Diesel', seats: '5' },
             { img: 'https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80', name: 'Mercedes Sprinter', price: '60000', fuel: 'Diesel', seats: '9' }
+
+            { img: 'lexux.jepeg', name: 'Lexus', price: '60000', fuel: 'Diesel', seats: '9' },
+            { img: 'prado.jepeg', name: 'Prado', price: '60000', fuel: 'Diesel', seats: '9' },
+            { img: 'pikup.jepeg', name: 'Pikup', price: '60000', fuel: 'Diesel', seats: '9' },
+            { img: 'rangerover.jepeg', name: 'Lexus', price: '60000', fuel: 'Diesel', seats: '9' },
+            
         ];
 
         vehicules.forEach(vehicule => {
@@ -690,4 +696,5 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         };
     };
+
 });
