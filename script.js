@@ -69,14 +69,51 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+
+    // ==================== ÉVÉNEMENTIEL FILTER ====================
+    document.addEventListener('DOMContentLoaded', function() {
+        const categoryCards = document.querySelectorAll('.category-card');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        if (categoryCards.length > 0) {
+            categoryCards.forEach(card => {
+                card.addEventListener('click', function() {
+                    // Remove active class from all cards
+                    categoryCards.forEach(c => c.classList.remove('active'));
+                    
+                    // Add active class to clicked card
+                    this.classList.add('active');
+                    
+                    // Get category
+                    const category = this.getAttribute('data-category');
+                    
+                    // Filter gallery items
+                    galleryItems.forEach(item => {
+                        if (category === 'all' || item.getAttribute('data-category') === category) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        }
+    });
+
     // ==================== CHARGEMENT DYNAMIQUE DES VÉHICULES ====================
     const vehiculesGrid = document.getElementById('vehiculesGrid');
     if (vehiculesGrid) {
         const vehicules = [
-            { img: 'https://images.unsplash.com/photo-1494976388531-d1058494cdd8?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80', name: 'Toyota Corolla', price: '25000', fuel: 'Essence', seats: '5' },
-            { img: 'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80', name: 'Ford Ranger', price: '45000', fuel: 'Diesel', seats: '5' },
-            { img: 'https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80', name: 'Mercedes Sprinter', price: '60000', fuel: 'Diesel', seats: '9' }
-
+            { img: ' https://images.unsplash.com/photo-1494976388531-d1058494cdd8?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80', name: 'Toyota Camry', price: '35.000 fcfa', fuel: 'Essence', seats: '5' },
+            { img: 'Lexus.jpg', name: 'Lexus', price: '40.000 ', fuel: 'Essence', seats: '5' },
+            { img: 'Lexus2.jpg', name: 'Lexus', price: '50.000 ', fuel: 'Essence', seats: '5' },
+            { img: 'Lexus3.jpeg', name: 'Lexus', price: '45.000 ', fuel: 'Essence', seats: '5' },
+            { img: 'rangerover.jpeg', name: 'Range Rover', price: '50.000 ', fuel: 'Essence', seats: '5' },
+            { img: 'prado.jpeg', name: 'Prado', price: '50.000 ', fuel: 'Essence', seats: '5' },
+            { img: 'mercedes.jpeg', name: 'Mercedes', price: '45.000 ', fuel: 'Essence', seats: '5' },
+            { img: 'pikup.jpeg', name: 'Pikup', price: '45.000 ', fuel: 'Essence', seats: '5' },
+            { img: 'tcorola.jpg', name: 'Toyota Corola', price: '45.000 ', fuel: 'Essence', seats: '5' }
+            
         ];
 
         vehicules.forEach(vehicule => {
@@ -87,7 +124,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <img src="${vehicule.img}" alt="${vehicule.name}">
                 </div>
                 <h3>${vehicule.name}</h3>
-                <div class="vehicule-price">${vehicule.price} FCFA <span>/jour</span></div>    
+                <div class="vehicule-price">${vehicule.price} FCFA <span>/jour</span></div>
                 <div class="vehicule-features">
                     <span><i class="fas fa-gas-pump"></i> ${vehicule.fuel}</span>
                     <span><i class="fas fa-users"></i> ${vehicule.seats} places</span>
@@ -289,7 +326,7 @@ document.addEventListener('DOMContentLoaded', function() {
             return 'Nous proposons des services de déménagement complets avec notre équipe professionnelle. Demandez un devis gratuit !';
         }
         else if (msg.includes('contact') || msg.includes('téléphone') || msg.includes('appeler')) {
-            return 'Vous pouvez nous joindre au +229 01 66 23 28 88 ou nous envoyer un email à augustin46@gmail.com';
+            return 'Vous pouvez nous joindre au +229 01 66 23 28 88 ou nous envoyer un email à contact@ttbking.bj';
         }
         else if (msg.includes('merci')) {
             return 'Merci à vous ! N\'hésitez pas si vous avez d\'autres questions.';
@@ -367,18 +404,18 @@ document.addEventListener('DOMContentLoaded', function() {
     const guestHouses = [
         {
             id: 1,
-            name: 'Villa Océane',
-            location: 'Cotonou, Fidjrossè',
+            name: 'Haut standing HIGH-TECK',
+            location: 'Calavi, Zoundja',
             price: '75000',
-            type: 'villa',
+            type: 'Appartement',
             rating: 4.8,
             reviews: 24,
             bedrooms: 4,
             bathrooms: 3,
             guests: 8,
-            image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+            image: 'ch1.jpg',
             amenities: ['wifi', 'climatisation', 'piscine', 'parking', 'cuisine'],
-            description: 'Magnifique villa avec vue sur l\'océan, piscine privée et jardin tropical.',
+            description: 'Magnifique appartement avec vue sur l\'a nature, piscine privée et jardin tropical.',
             images: [
                 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
                 'https://images.unsplash.com/photo-1575517111478-7f6afd0973db?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
@@ -389,15 +426,15 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             id: 2,
             name: 'Appartement Marina',
-            location: 'Cotonou, Marina',
+            location: 'Cotonou, CenSad Akpakpa',
             price: '45000',
-            type: 'appartement',
+            type: 'Chambre Salon',
             rating: 4.6,
             reviews: 18,
-            bedrooms: 2,
+            bedrooms: 1,
             bathrooms: 2,
             guests: 4,
-            image: 'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+            image: 'ch3.jpg',
             amenities: ['wifi', 'climatisation', 'parking', 'cuisine'],
             description: 'Bel appartement moderne au cœur de la Marina, proche des commerces et restaurants.',
             images: [
@@ -408,9 +445,9 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             id: 3,
-            name: 'Studio Cocotiers',
-            location: 'Cotonou, Cocotiers',
-            price: '25000',
+            name: 'Studio Akpakpa',
+            location: 'Cotonou, AKPAKPA-AVOTROU',
+            price: '35000',
             type: 'studio',
             rating: 4.5,
             reviews: 12,
@@ -482,9 +519,67 @@ document.addEventListener('DOMContentLoaded', function() {
                 'https://images.unsplash.com/photo-1513694203232-719a280e022f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
                 'https://images.unsplash.com/photo-1536376072261-38c75010e6c9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
             ]
+        },
+
+         {
+            id: 7,
+            name: 'Studio Plage',
+            location: 'Abomey-Calavi, Zogbadjè UAC',
+            price: '30000',
+            type: 'studio',
+            rating: 4.4,
+            reviews: 15,
+            bedrooms: 1,
+            bathrooms: 1,
+            guests: 2,
+            image: 'g2.jpg',
+            amenities: ['wifi', 'climatisation', 'cuisine', 'vue sur la ville'],
+            description: 'Studio pied dans la\ville, accès direct à uac.',
+            images: [
+                'https://images.unsplash.com/photo-1513694203232-719a280e022f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+                'https://images.unsplash.com/photo-1536376072261-38c75010e6c9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
+            ]
+        },
+         {
+            id: 8,
+            name: 'Studio Plage',
+            location: 'Porto-Novo, Assemblé National',
+            price: '30000',
+            type: 'studio',
+            rating: 4.4,
+            reviews: 15,
+            bedrooms: 1,
+            bathrooms: 1,
+            guests: 2,
+            image: 'g3.jpg',
+            amenities: ['wifi', 'climatisation', 'cuisine', 'vue sur la ville'],
+            description: 'Studio pied dans la\ ville, accès direct à Assemblé National.',
+            images: [
+                'https://images.unsplash.com/photo-1513694203232-719a280e022f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+                'https://images.unsplash.com/photo-1536376072261-38c75010e6c9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
+            ]
+        },
+         {
+            id: 9,
+            name: 'Studio Plage',
+            location: 'Porto-Novo, Assemblé National',
+            price: '30000',
+            type: 'studio',
+            rating: 4.4,
+            reviews: 15,
+            bedrooms: 1,
+            bathrooms: 1,
+            guests: 2,
+            image: 'g4.jpg',
+            amenities: ['wifi', 'climatisation', 'cuisine', 'vue sur la ville'],
+            description: 'Studio pied dans la\ ville, accès direct à Assemblé National.',
+            images: [
+                'https://images.unsplash.com/photo-1513694203232-719a280e022f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+                'https://images.unsplash.com/photo-1536376072261-38c75010e6c9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
+            ]
         }
-        
-       
+    
+
     ];
 
     let currentFilter = 'all';
@@ -693,10 +788,4 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         };
     };
-
 });
-
-
-
-
-
