@@ -373,6 +373,11 @@ div.container h4 {
     margin-right: auto;
 }
 
+.evenementiel .section-subtitle p {
+    text-align: center;
+    
+}
+
 /* Catégories d'événements */
 .event-categories {
     display: flex;
