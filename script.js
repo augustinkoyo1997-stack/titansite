@@ -104,15 +104,15 @@ document.addEventListener('DOMContentLoaded', function() {
     const vehiculesGrid = document.getElementById('vehiculesGrid');
     if (vehiculesGrid) {
         const vehicules = [
-            { img: ' https://images.unsplash.com/photo-1494976388531-d1058494cdd8?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80', name: 'Toyota Camry', price: '35.000 fcfa', fuel: 'Essence', seats: '5' },
+            { img: ' tcorola.jpg', name: 'Toyota Camry', price: '35.000 fcfa', fuel: 'Essence', seats: '5' },
             { img: 'Lexus.jpg', name: 'Lexus', price: '40.000 ', fuel: 'Essence', seats: '5' },
             { img: 'Lexus2.jpg', name: 'Lexus', price: '50.000 ', fuel: 'Essence', seats: '5' },
             { img: 'Lexus3.jpeg', name: 'Lexus', price: '45.000 ', fuel: 'Essence', seats: '5' },
-            { img: 'rangerover.jpeg', name: 'Range Rover', price: '50.000 ', fuel: 'Essence', seats: '5' },
-            { img: 'prado.jpeg', name: 'Prado', price: '50.000 ', fuel: 'Essence', seats: '5' },
-            { img: 'mercedes.jpeg', name: 'Mercedes', price: '45.000 ', fuel: 'Essence', seats: '5' },
-            { img: 'pikup.jpeg', name: 'Pikup', price: '45.000 ', fuel: 'Essence', seats: '5' },
-            { img: 'tcorola.jpg', name: 'Toyota Corola', price: '45.000 ', fuel: 'Essence', seats: '5' }
+            { img: 'rangerover.jpeg', name: 'Range Rover', price: '100.000 ', fuel: 'Essence', seats: '5' },
+            { img: 'prado.jpeg', name: 'Prado', price: '120.000 ', fuel: 'Essence', seats: '5' },
+            { img: 'mercedes.jpeg', name: 'Mercedes', price: '130.000 ', fuel: 'Essence', seats: '5' },
+            { img: 'pikup.jpeg', name: 'Pikup', price: '55.000 ', fuel: 'Essence', seats: '5' },
+          /*   { img: 'tcorola.jpg', name: 'Toyota Corola', price: '55.000 ', fuel: 'Essence', seats: '5' } */
             
         ];
 
@@ -406,7 +406,7 @@ document.addEventListener('DOMContentLoaded', function() {
             id: 1,
             name: 'Haut standing HIGH-TECK',
             location: 'Calavi, Zoundja',
-            price: '75000',
+            price: '110000',
             type: 'Appartement',
             rating: 4.8,
             reviews: 24,
@@ -425,10 +425,10 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             id: 2,
-            name: 'Appartement Marina',
+            name: '   CenSad ',
             location: 'Cotonou, CenSad Akpakpa',
             price: '45000',
-            type: 'Chambre Salon',
+            type: ' stydio Chambre Salon',
             rating: 4.6,
             reviews: 18,
             bedrooms: 1,
@@ -454,7 +454,7 @@ document.addEventListener('DOMContentLoaded', function() {
             bedrooms: 1,
             bathrooms: 1,
             guests: 2,
-            image: 'https://images.unsplash.com/photo-1536376072261-38c75010e6c9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+            image: 'ch2.jpg',
             amenities: ['wifi', 'climatisation', 'cuisine'],
             description: 'Studio cozy et fonctionnel, idéal pour les courts séjours.',
             images: [
