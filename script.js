@@ -112,7 +112,8 @@ document.addEventListener('DOMContentLoaded', function() {
             { img: 'prado.jpeg', name: 'Prado', price: '120.000 ', fuel: 'Essence', seats: '5' },
             { img: 'mercedes.jpeg', name: 'Mercedes', price: '130.000 ', fuel: 'Essence', seats: '5' },
             { img: 'pikup.jpeg', name: 'Pikup', price: '55.000 ', fuel: 'Essence', seats: '5' },
-          /*   { img: 'tcorola.jpg', name: 'Toyota Corola', price: '55.000 ', fuel: 'Essence', seats: '5' } */
+            { img:  https://images.unsplash.com/photo-1494976388531-d1058494cdd8?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80', name: 'Toyota Camry', price: '35.000 fcfa', fuel: 'Essence', seats: '5' }  
+            
             
         ];
 
