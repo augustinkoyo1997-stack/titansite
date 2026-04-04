@@ -112,8 +112,7 @@ document.addEventListener('DOMContentLoaded', function() {
             { img: 'prado.jpeg', name: 'Prado', price: '120.000 ', fuel: 'Essence', seats: '5' },
             { img: 'mercedes.jpeg', name: 'Mercedes', price: '130.000 ', fuel: 'Essence', seats: '5' },
             { img: 'pikup.jpeg', name: 'Pikup', price: '55.000 ', fuel: 'Essence', seats: '5' },
-            { img:  https://images.unsplash.com/photo-1494976388531-d1058494cdd8?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80', name: 'Toyota Camry', price: '35.000 fcfa', fuel: 'Essence', seats: '5' }  
-            
+            { img: 'tcorola.jpg', name: 'Toyota Corola', price: '55.000 ', fuel: 'Essence', seats: '5' } 
             
         ];
 
@@ -318,7 +317,7 @@ document.addEventListener('DOMContentLoaded', function() {
             return 'Bonjour ! Comment puis-je vous aider aujourd\'hui ?';
         }
         else if (msg.includes('véhicule') || msg.includes('voiture') || msg.includes('location') || msg.includes('prix')) {
-            return 'Nos véhicules commencent à 25 000 FCFA par jour. Nous avons des berlines, 4x4 et utilitaires. Souhaitez-vous plus d\'informations sur un modèle spécifique ?';
+            return 'Nos véhicules commencent à 35 000 FCFA par jour. Nous avons des berlines, 4x4 et utilitaires. Souhaitez-vous plus d\'informations sur un modèle spécifique ?';
         }
         else if (msg.includes('guest house') || msg.includes('hébergement') || msg.includes('logement')) {
             return 'Nos guest houses sont équipées du WiFi, de la climatisation et d\'une cuisine. Les tarifs commencent à 35 000 FCFA par nuit. Voulez-vous réserver ?';
@@ -540,48 +539,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 'https://images.unsplash.com/photo-1513694203232-719a280e022f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
                 'https://images.unsplash.com/photo-1536376072261-38c75010e6c9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
             ]
-        },
-         {
-            id: 8,
-            name: 'Studio Plage',
-            location: 'Porto-Novo, Assemblé National',
-            price: '30000',
-            type: 'studio',
-            rating: 4.4,
-            reviews: 15,
-            bedrooms: 1,
-            bathrooms: 1,
-            guests: 2,
-            image: 'g3.jpg',
-            amenities: ['wifi', 'climatisation', 'cuisine', 'vue sur la ville'],
-            description: 'Studio pied dans la\ ville, accès direct à Assemblé National.',
-            images: [
-                'https://images.unsplash.com/photo-1513694203232-719a280e022f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-                'https://images.unsplash.com/photo-1536376072261-38c75010e6c9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
-            ]
-        },
-         {
-            id: 9,
-            name: 'Studio Plage',
-            location: 'Porto-Novo, Assemblé National',
-            price: '30000',
-            type: 'studio',
-            rating: 4.4,
-            reviews: 15,
-            bedrooms: 1,
-            bathrooms: 1,
-            guests: 2,
-            image: 'g4.jpg',
-            amenities: ['wifi', 'climatisation', 'cuisine', 'vue sur la ville'],
-            description: 'Studio pied dans la\ ville, accès direct à Assemblé National.',
-            images: [
-                'https://images.unsplash.com/photo-1513694203232-719a280e022f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-                'https://images.unsplash.com/photo-1536376072261-38c75010e6c9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
-            ]
+        
         }
+            ]
     
 
-    ];
+    
 
     let currentFilter = 'all';
     let visibleCount = 3; // Show 3 initially
